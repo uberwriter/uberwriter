@@ -1,0 +1,2 @@
+regex
+pypandoc==1.4

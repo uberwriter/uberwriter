@@ -1,0 +1,37 @@
+@import url("base.css");
+
+:root {
+  --text-color: #2e3436;
+  --background-color: #f6f5f4;
+  --alt-background-color: #edeeef;
+  --link-color: #0d71de;
+  --blockquote-text-color: #747e85;
+  --blockquote-border-color: #d6d8da;
+  --header-border-color: #e1e2e4;
+  --hr-background-color: #d8dadd;
+  --table-tr-border-color: #bdc1c6;
+  --table-td-border-color: #d6d8da;
+  --kbd-text-color: #4e585e;
+  --kbd-background-color: #f1f1f1;
+  --kbd-border-color: #bdc1c6;
+  --kbd-shadow-color: #8c939a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #eeeeec;
+    --background-color: #353535;
+    --alt-background-color: #3a3a3a;
+    --link-color: #b5daff;
+    --blockquote-text-color: #a8a8a6;
+    --blockquote-border-color: #525252;
+    --header-border-color: #474747;
+    --hr-background-color: #505050;
+    --table-tr-border-color: #696969;
+    --table-td-border-color: #525252;
+    --kbd-text-color: #cececc;
+    --kbd-background-color: #3c3c3c;
+    --kbd-border-color: #696969;
+    --kbd-shadow-color: #979797;
+  }
+}

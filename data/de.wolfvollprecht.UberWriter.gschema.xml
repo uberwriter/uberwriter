@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<schemalist>
+
+  <enum id='de.wolfvollprecht.UberWriter.Stat'>
+    <value nick='characters' value='0' />
+    <value nick='words' value='1' />
+    <value nick='sentences' value='2' />
+    <value nick='paragraphs' value='3' />
+    <value nick='read_time' value='4' />
+  </enum>
+
+  <enum id='de.wolfvollprecht.UberWriter.PreviewMode'>
+    <value nick='full-width' value='0' />
+    <value nick='half-width' value='1' />
+    <value nick='half-height' value='2' />
+    <value nick='windowed' value='3' />
+  </enum>
+
+  <schema path="/de/wolfvollprecht/UberWriter/" id="de.wolfvollprecht.UberWriter">
+    <key name='dark-mode' type='b'>
+      <default>false</default>
+      <summary>Use dark mode</summary>
+      <description>
+        Enable or disable the dark mode.
+      </description>
+    </key>
+    <key name='spellcheck' type='b'>
+      <default>true</default>
+      <summary>Check spelling while typing</summary>
+      <description>
+        Enable or disable spellchecking.
+      </description>
+    </key>
+    <key name='sync-scroll' type='b'>
+      <default>true</default>
+      <summary>Synchronize editor/preview scrolling</summary>
+      <description>
+        Keep the editor and preview scroll positions in sync.
+      </description>
+    </key>
+    <key name='input-format' type='s'>
+      <default>"markdown"</default>
+      <summary>Input format</summary>
+      <description>
+        Input format to use when previewing and exporting using Pandoc.
+      </description>
+    </key>
+    <key name='autohide-headerbar' type='b'>
+      <default>true</default>
+      <summary>Autohide Headerbar</summary>
+      <description>
+        Hide the header and status bars when typing.
+      </description>
+    </key>
+    <key name='open-file-path' type='s'>
+      <default>"/tmp"</default>
+      <summary>Open file base path</summary>
+      <description>
+        Open file paths of the current session
+      </description>
+    </key>
+    <key name='stat-default' enum='de.wolfvollprecht.UberWriter.Stat'>
+      <default>"words"</default>
+      <summary>Default statistic</summary>
+      <description>
+        Which statistic is shown on the main window.
+      </description>
+    </key>
+    <key name='characters-per-line' type='i'>
+      <default>66</default>
+      <summary>Characters per line</summary>
+      <description>
+        Maximum number of characters per line within the editor.
+      </description>
+    </key>
+    <key name='preview-mode' enum='de.wolfvollprecht.UberWriter.PreviewMode'>
+      <default>"full-width"</default>
+      <summary>Preview mode</summary>
+      <description>
+        How to display the preview.
+      </description>
+    </key>
+
+  </schema>
+
+</schemalist>
