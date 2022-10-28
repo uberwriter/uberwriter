@@ -1,0 +1,34 @@
+button {
+    margin-left: 5px;
+
+    border:none;
+    color: black;
+    font-size: 20px;
+    background: #ec6410;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+
+    height: 100%;
+}
+button:hover {
+    background: rgb(150, 55, 0);
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+.donate {
+    background-color: rgba(194, 194, 194, 0);
+    color: #6b6b6b;
+}
+
+.donate:hover {
+    background: #6b6b6b;
+    color: white;
+}
+
+/* Maximum width */
+@media (max-width: 480px) {
+    #download {
+      display: none;
+    }
+}
